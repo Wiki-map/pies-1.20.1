@@ -1,0 +1,31 @@
+package net.wiki.pies.item;
+
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
+import net.wiki.pies.Pies;
+
+public class ModItemGroups {
+    public static final ItemGroup Sea_Group = Registry.register(Registries.ITEM_GROUP, new Identifier(Pies.MOD_ID, "apple_pie"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.apple_pie")) .icon(() -> new ItemStack(Moditems.ApplePie)).entries((displayContext, entries) -> {
+                entries.add(Moditems.ApplePie);
+                entries.add(Moditems.StrawberryPie);
+                entries.add(Moditems.SweetBerryPie);
+
+                entries.add(Moditems.SuspiciousPie);
+
+                entries.add(Moditems.Strawberry);
+                entries.add(Moditems.Strawberry_Seeds);
+
+            }).build());
+
+
+    public static void registerItemGroups() {
+        Pies.LOGGER.info("Registering Item Groups for" + Pies.MOD_ID);
+    }
+
+}

@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pies",
+	"version": "${version}",
+	"name": "Pies",
+	"description": "Pies... Pies..",
+	"authors": [
+		"Wiki"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/pies/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.wiki.pies.Pies"
+		],
+		"fabric-datagen": [
+			"net.wiki.pies.PiesDataGenerator"
+		],
+		"client": [
+			"net.wiki.pies.PiesModClient"
+		]
+	},
+	"mixins": [
+		"pies.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
