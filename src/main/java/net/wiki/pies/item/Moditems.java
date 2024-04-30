@@ -11,6 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.wiki.pies.Pies;
 import net.wiki.pies.block.ModBlocks;
+import net.wiki.pies.item.custom.ModHelthSwordItem;
 
 public class Moditems {
 
@@ -24,7 +25,7 @@ public class Moditems {
 
     public static final Item Strawberry_Seeds = registerItem("strawberry_seeds", new AliasedBlockItem(ModBlocks.Strawberry_Crop,new FabricItemSettings()));
 
-    public static final Item StrawberrySword = registerItem("strawberry_sword", new SwordItem(ModToolMaterial.Strawberry, 2, 1f, new Item.Settings() ));
+    public static final Item StrawberrySword = registerItem("strawberry_sword", new ModHelthSwordItem(ModToolMaterial.Strawberry, 2, 3f, new Item.Settings() ));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Pies.MOD_ID, name), item);

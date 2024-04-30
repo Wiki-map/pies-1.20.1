@@ -50,7 +50,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Moditems.Strawberry_Seeds, 4).pattern("RTR").pattern("TRT").pattern("RTR").input('R', Items.SWEET_BERRIES).input('T', Items.PUMPKIN_SEEDS).criterion(hasItem(Items.SWEET_BERRIES),conditionsFromItem(Items.SWEET_BERRIES)).offerTo(exporter, new Identifier(getRecipeName(Moditems.Strawberry_Seeds)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Moditems.Strawberry_Seeds, 4).pattern("RTR").pattern("TRT").pattern("RTR").input('T', Items.SWEET_BERRIES).input('R', Items.PUMPKIN_SEEDS).criterion(hasItem(Items.SWEET_BERRIES),conditionsFromItem(Items.SWEET_BERRIES)).offerTo(exporter, new Identifier(getRecipeName(Moditems.Strawberry_Seeds)));
+        //ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Moditems.Strawberry_Seeds, 4).pattern("RTR").pattern("TRT").pattern("RTR").input('T', Items.SWEET_BERRIES).input('R', Items.PUMPKIN_SEEDS).criterion(hasItem(Items.SWEET_BERRIES),conditionsFromItem(Items.SWEET_BERRIES)).offerTo(exporter, new Identifier(getRecipeName(Moditems.Strawberry_Seeds)));
 
     }
 }
