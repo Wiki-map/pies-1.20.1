@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -22,6 +23,8 @@ public class Moditems {
     public static final Item Strawberry = registerItem("strawberry", new Item(new Item.Settings().food(ModFoodComponents.Strawberry)));
 
     public static final Item Strawberry_Seeds = registerItem("strawberry_seeds", new AliasedBlockItem(ModBlocks.Strawberry_Crop,new FabricItemSettings()));
+
+    public static final Item StrawberrySword = registerItem("strawberry_sword", new SwordItem(ModToolMaterial.Strawberry, 2, 1f, new Item.Settings() ));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Pies.MOD_ID, name), item);
