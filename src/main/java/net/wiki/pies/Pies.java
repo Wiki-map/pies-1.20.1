@@ -2,6 +2,7 @@ package net.wiki.pies;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.wiki.pies.entity.ModEntities;
 import net.wiki.pies.item.ModItemGroups;
 import net.wiki.pies.item.Moditems;
 import net.wiki.pies.util.ModLootTableModifiers;
@@ -19,7 +20,10 @@ public class Pies implements ModInitializer {
 	public void onInitialize() {
 		Moditems.registerModItems();
 		ModItemGroups.registerItemGroups();
+
 		ModRegistries.registerModStuff();
 		ModLootTableModifiers.modifyLootTables();
+
+		ModEntities.registerModEntities();
 	}
 }

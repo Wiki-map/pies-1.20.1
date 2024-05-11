@@ -3,11 +3,13 @@ package net.wiki.pies.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.wiki.pies.Pies;
 import net.wiki.pies.block.ModBlocks;
+import net.wiki.pies.entity.ModEntities;
 import net.wiki.pies.item.custom.ModHelthSwordItem;
 
 public class Moditems {
@@ -28,6 +30,8 @@ public class Moditems {
     public static final Item Strawberry_Seeds = registerItem("strawberry_seeds", new AliasedBlockItem(ModBlocks.Strawberry_Crop,new FabricItemSettings()));
 
     public static final Item StrawberrySword = registerItem("strawberry_sword", new ModHelthSwordItem(ModToolMaterial.Strawberry, 2, 3f, new Item.Settings()));
+
+    public static final Item Firefly_spawnEgg = registerItem("firefly_spawn_egg", new SpawnEggItem(ModEntities.FIREFLY,0x4F4F4F,0xE5FF00, new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Pies.MOD_ID, name), item);
