@@ -3,6 +3,7 @@ package net.wiki.pies.entity.client;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.LivingEntityRenderer;
+import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.Identifier;
@@ -10,7 +11,7 @@ import net.wiki.pies.Pies;
 import net.wiki.pies.entity.custom.FireflyEntity;
 import net.wiki.pies.entity.layer.ModModelsLayers;
 
-public class FireflyRenderer extends LivingEntityRenderer<FireflyEntity, FireflyModel<FireflyEntity>> {
+public class FireflyRenderer extends MobEntityRenderer<FireflyEntity, FireflyModel<FireflyEntity>> {
 
     private static final Identifier TEXTURE = new Identifier(Pies.MOD_ID, "textures/entity/firefly.png");
 
