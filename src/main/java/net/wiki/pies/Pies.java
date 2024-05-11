@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.wiki.pies.item.ModItemGroups;
 import net.wiki.pies.item.Moditems;
+import net.wiki.pies.util.ModLootTableModifiers;
 import net.wiki.pies.util.ModRegistries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,5 +20,6 @@ public class Pies implements ModInitializer {
 		Moditems.registerModItems();
 		ModItemGroups.registerItemGroups();
 		ModRegistries.registerModStuff();
+		ModLootTableModifiers.modifyLootTables();
 	}
 }

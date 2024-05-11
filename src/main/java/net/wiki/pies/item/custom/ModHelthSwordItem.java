@@ -14,7 +14,7 @@ public class ModHelthSwordItem extends SwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 200, 0), attacker);
+        attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK, 200, 0), attacker);
         return super.postHit(stack, target, attacker);
     }
 }

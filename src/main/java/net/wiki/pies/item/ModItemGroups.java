@@ -11,15 +11,18 @@ import net.wiki.pies.Pies;
 
 public class ModItemGroups {
     public static final ItemGroup Sea_Group = Registry.register(Registries.ITEM_GROUP, new Identifier(Pies.MOD_ID, "apple_pie"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.apple_pie")) .icon(() -> new ItemStack(Moditems.ApplePie)).entries((displayContext, entries) -> {
-                entries.add(Moditems.ApplePie);
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.apple_pie")) .icon(() -> new ItemStack(Moditems.StrawberryPie)).entries((displayContext, entries) -> {
                 entries.add(Moditems.StrawberryPie);
-                entries.add(Moditems.SweetBerryPie);
+                entries.add(Moditems.WildBerryPie);
 
                 entries.add(Moditems.SuspiciousPie);
 
                 entries.add(Moditems.Strawberry);
                 entries.add(Moditems.Strawberry_Seeds);
+
+                entries.add(Moditems.Strawberry_IceCram);
+
+                entries.add(Moditems.Lemon);
 
                 entries.add(Moditems.StrawberrySword);
 

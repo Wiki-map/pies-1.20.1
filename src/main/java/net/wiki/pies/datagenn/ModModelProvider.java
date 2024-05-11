@@ -21,9 +21,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(Moditems.ApplePie, Models.GENERATED);
 
-        itemModelGenerator.register(Moditems.SweetBerryPie, Models.GENERATED);
+        itemModelGenerator.register(Moditems.WildBerryPie, Models.GENERATED);
 
         itemModelGenerator.register(Moditems.StrawberryPie, Models.GENERATED);
 
@@ -31,6 +30,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(Moditems.Strawberry, Models.GENERATED);
 
+        itemModelGenerator.register(Moditems.Strawberry_IceCram, Models.GENERATED);
+
         itemModelGenerator.register(Moditems.StrawberrySword, Models.HANDHELD);
+
+        itemModelGenerator.register(Moditems.Lemon, Models.GENERATED);
     }
 }

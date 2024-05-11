@@ -1,7 +1,6 @@
 {
-  "item.pies.apple_pie": "Apple Pie",
   "item.pies.strawberry_pie": "Strawberry Pie",
-  "item.pies.sweetberry_pie": "Sweet Berry Pie",
+  "item.pies.wildberry_pie": "Wild Berry Pie",
 
   "item.pies.suspicious_pie": "Suspicious Pie",
 
@@ -9,6 +8,12 @@
   "item.pies.strawberry_seeds": "Strawberry Seeds",
 
   "item.pies.strawberry_sword": "Strawberry Sword",
+
+  "item.pies.strawberry_elytra": "Strawberry Elytra",
+
+  "item.pies.strawberry_ice_cream": "Strawberry Ice Cream",
+
+  "item.pies.lemon": "Lemon",
 
   "itemgroup.apple_pie": "Pies"
 }

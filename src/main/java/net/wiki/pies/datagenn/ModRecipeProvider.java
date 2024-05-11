@@ -42,7 +42,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Moditems.StrawberryPie, 1).pattern("RTS").input('R', Moditems.Strawberry).input('T', Items.SUGAR).input('S', Items.EGG).criterion(hasItem(Moditems.Strawberry),conditionsFromItem(Moditems.Strawberry)).offerTo(exporter, new Identifier(getRecipeName(Moditems.StrawberryPie)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Moditems.SweetBerryPie, 1).pattern("RTS").input('R', Items.SWEET_BERRIES).input('T', Items.SUGAR).input('S', Items.EGG).criterion(hasItem(Items.SWEET_BERRIES),conditionsFromItem(Items.SWEET_BERRIES)).offerTo(exporter, new Identifier(getRecipeName(Items.SWEET_BERRIES)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Moditems.WildBerryPie, 1).pattern("RTS").input('R', Items.SWEET_BERRIES).input('T', Items.SUGAR).input('S', Items.EGG).criterion(hasItem(Items.SWEET_BERRIES),conditionsFromItem(Items.SWEET_BERRIES)).offerTo(exporter, new Identifier(getRecipeName(Items.SWEET_BERRIES)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Moditems.SuspiciousPie, 1).pattern("RTS").input('R', Items.RED_MUSHROOM).input('T', Items.SUGAR).input('S', Items.EGG).criterion(hasItem(Items.RED_MUSHROOM),conditionsFromItem(Items.RED_MUSHROOM)).offerTo(exporter, new Identifier(getRecipeName(Items.RED_MUSHROOM)));
 
@@ -50,7 +50,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Moditems.Strawberry_Seeds, 4).pattern("RTR").pattern("TRT").pattern("RTR").input('R', Items.SWEET_BERRIES).input('T', Items.PUMPKIN_SEEDS).criterion(hasItem(Items.SWEET_BERRIES),conditionsFromItem(Items.SWEET_BERRIES)).offerTo(exporter, new Identifier(getRecipeName(Moditems.Strawberry_Seeds)));
 
-        //ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Moditems.Strawberry_Seeds, 4).pattern("RTR").pattern("TRT").pattern("RTR").input('T', Items.SWEET_BERRIES).input('R', Items.PUMPKIN_SEEDS).criterion(hasItem(Items.SWEET_BERRIES),conditionsFromItem(Items.SWEET_BERRIES)).offerTo(exporter, new Identifier(getRecipeName(Moditems.Strawberry_Seeds)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Moditems.Strawberry_IceCram, 4).pattern("RRR").pattern("RTR").pattern("RRR").input('R', Moditems.Strawberry).input('T', Items.ICE).criterion(hasItem(Moditems.Strawberry),conditionsFromItem(Moditems.Strawberry)).offerTo(exporter, new Identifier(getRecipeName(Moditems.Strawberry_IceCram)));
+
+
 
     }
 }

@@ -12,4 +12,8 @@ public class ModFoodComponents {
 
     public static final FoodComponent Strawberry = new FoodComponent.Builder().hunger(5).saturationModifier(1.5f).build();
 
+    public static final FoodComponent Strawberry_IceCream = new FoodComponent.Builder().hunger(5).saturationModifier(1.5f).build();
+
+    public static final FoodComponent Lemon = new FoodComponent.Builder().hunger(5).saturationModifier(1.5f).build();
+
 }
