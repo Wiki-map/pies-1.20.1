@@ -1,15 +1,11 @@
 package net.wiki.pies.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
 import net.wiki.pies.Pies;
 import net.wiki.pies.block.ModBlocks;
 import net.wiki.pies.item.custom.ModHelthSwordItem;
@@ -24,6 +20,8 @@ public class Moditems {
     public static final Item Strawberry = registerItem("strawberry", new Item(new Item.Settings().food(ModFoodComponents.Strawberry)));
 
     public static final Item Lemon = registerItem("lemon", new Item(new Item.Settings().food(ModFoodComponents.Lemon)));
+
+    public static final Item Lemonade = registerItem("lemonade", new Item(new Item.Settings().food(ModFoodComponents.Lemonade)));
 
     public static final Item Strawberry_IceCram = registerItem("strawberry_ice_cream", new Item(new Item.Settings().food(ModFoodComponents.Strawberry_IceCream)));
 

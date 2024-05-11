@@ -19,12 +19,12 @@ public class ModItemGroups {
 
                 entries.add(Moditems.Strawberry);
                 entries.add(Moditems.Strawberry_Seeds);
-
                 entries.add(Moditems.Strawberry_IceCram);
 
-                entries.add(Moditems.Lemon);
-
                 entries.add(Moditems.StrawberrySword);
+
+                entries.add(Moditems.Lemon);
+                entries.add(Moditems.Lemonade);
 
             }).build());
 
